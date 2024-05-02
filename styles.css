@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --AlmostWhite: hsl(0, 0%, 98%);
+  --MediumGray: hsl(0, 0%, 41%);
+  --AlmostBlack: hsl(0, 0%, 8%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Epilogue", Times, serif;
+}
+#greymenu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 80%;
+  transition: 0.3s ease-in;
+}
+#greymenu.open {
+  display: block;
+}
+.navbar {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+.Logo {
+  object-fit: contain;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+.Menuburger {
+  object-fit: contain;
+}
+.hidden {
+  display: none;
+}
+.hiddendesktop {
+  display: none;
+}
+
+.main {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+.Heroimgcontainer {
+  margin: auto;
+}
+.Heroimgmobile {
+  object-fit: scale-down;
+  margin-top: 1rem;
+  width: 100%;
+}
+.Heroimgdesktop {
+  display: none;
+}
+.wraper {
+  text-align: center;
+}
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--AlmostBlack);
+  margin-top: 40px;
+}
+p {
+  font-size: 18px;
+  color: var(--MediumGray);
+  font-weight: 500;
+  padding-inline: 50px;
+  line-height: 1.5;
+  font-family: Epilogue;
+}
+.Herobtn {
+  background-color: var(--AlmostBlack);
+  color: var(--AlmostWhite);
+  padding: 15px 20px;
+  border-radius: 18px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  margin-top: 1rem;
+  border-color: var(--AlmostBlack);
+  border: solid 1px;
+}
+.Logos {
+  display: flex;
+  margin: auto;
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  justify-content: center;
+}
+.herologo {
+  object-fit: contain;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+br {
+  display: none;
+}
+
+@media only screen and (max-width: 764px) {
+  #Menu {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 50;
+    background-color: var(--AlmostWhite);
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+  }
+
+  #Menu.open {
+    transform: translateX(0);
+  }
+  .submenu {
+    display: none;
+  }
+  .submenu.open {
+    display: block;
+    transform: translateY(0);
+  }
+  .submenu2 {
+    display: none;
+  }
+  .submenu2.open {
+    display: block;
+  }
+  .ulmenu li {
+    margin-top: 1.2rem;
+    list-style: none;
+    color: var(--MediumGray);
+    font-weight: 500;
+    margin-top: rem;
+    width: fit-content;
+  }
+  #login {
+    background-color: var(--AlmostWhite);
+    border: none;
+    width: 100%;
+    margin: 2rem auto;
+    font-size: 1rem;
+    color: var(--MediumGray);
+    font-weight: 600;
+  }
+  #register {
+    background-color: var(--AlmostWhite);
+    width: 100%;
+    margin: auto;
+    width: fit-content;
+    font-size: 1rem;
+    color: var(--MediumGray);
+    font-weight: 600;
+    border-style: solid;
+    border-color: var(--AlmostBlack);
+    padding: 0.7rem 5rem;
+    border-radius: 12px;
+    border-color: var(--MediumGray);
+  }
+  .buttonwraper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+  }
+  .closeicon {
+    position: flex;
+    margin-left: 80%;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 765px) {
+  .Heroimgdesktop {
+    display: block;
+    height: 70vh;
+    padding-right: 5rem;
+  }
+  .Heroimgmobile {
+    display: none;
+  }
+  .Heroimgcontainer {
+    object-fit: contain;
+  }
+  #Burger,
+  #Menu {
+    display: none;
+  }
+  .mainwraper {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .wraper {
+    text-align: start;
+    padding: 0 10rem;
+  }
+  p {
+    padding-inline: 0px;
+    width: 30rem;
+  }
+  .Logos {
+    margin-top: 9rem;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  br {
+    display: block;
+  }
+  button {
+    cursor: pointer;
+  }
+  .Herobtn:hover {
+    background-color: var(--AlmostWhite);
+    color: var(--AlmostBlack);
+  }
+  .wapper {
+    margin-top: 4rem;
+  }
+  .hiddendesktop {
+    display: block;
+  }
+  .nav-list {
+    display: flex;
+    gap: 3rem;
+    padding-left: 6rem;
+    margin: auto;
+    color: var(--MediumGray);
+  }
+  .nav-list li {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    font-weight: 500;
+  }
+  .nav-list li img {
+    height: fit-content;
+    width: fit-content;
+    margin: auto 5px;
+  }
+  .nav-list li:hover {
+    cursor: pointer;
+    color: var(--AlmostBlack);
+  }
+
+  #logondlist {
+    display: flex;
+    justify-content: center;
+    padding-left: 5rem;
+  }
+  #loginbtndesktop {
+    background-color: var(--AlmostWhite);
+    border: none;
+    margin: 2rem auto;
+    font-size: 1rem;
+    color: var(--MediumGray);
+    font-weight: 600;
+  }
+  #registerbtndesktop {
+    width: 100%;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--AlmostWhite);
+    color: var(--AlmostBlack);
+    border-style: solid;
+    padding: 0.5rem 1.5rem;
+    border-radius: 12px;
+    border-color: var(--AlmostBlack);
+    height: fit-content;
+    margin: auto;
+  }
+  .buttonwraperdesktop {
+    display: flex;
+    gap: 2rem;
+    margin-right: 5rem;
+  }
+}

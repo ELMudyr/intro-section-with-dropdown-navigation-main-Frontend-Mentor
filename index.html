@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body >
+    <div id="greymenu"></div>
+    <nav class="navbar">
+      <div id="logondlist">
+        <img class="Logo" src="./images/logo.svg" alt="SnapLogo" />
+        <ul class="nav-list hiddendesktop">
+          <li>
+            Features <img src="./images/icon-arrow-down.svg" alt="arrowdown" />
+          </li>
+          <li>
+            Company <img src="./images/icon-arrow-down.svg" alt="arrowdown" />
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+      </div>
+      <div class="buttonwraperdesktop">
+        <button class="hiddendesktop" id="loginbtndesktop">Login</button>
+        <button class="hiddendesktop" id="registerbtndesktop">Register</button>
+      </div>
+      <a id="Burger" href="#"
+        ><img class="Menuburger" src="./images/icon-menu.svg" alt="Menu"
+      /></a>
+      <div id="Menu">
+        <div class="closeicon">
+          <img src="./images/icon-close-menu.svg" alt="" />
+        </div>
+        <ul class="ulmenu">
+          <li>
+            Features
+            <img
+              id="collapse"
+              src="./images/icon-arrow-down.svg"
+              alt="arrowdown"
+            />
+            <ul class="submenu">
+              <li><img src="./images/icon-todo.svg" alt="" /> Todo List</li>
+              <li><img src="./images/icon-calendar.svg" alt="" /> Calendar</li>
+              <li>
+                <img src="./images/icon-reminders.svg" alt="" /> Reminders
+              </li>
+              <li><img src="./images/icon-planning.svg" alt="" /> Planning</li>
+            </ul>
+          </li>
+          <li>
+            Company
+            <img
+              id="collapse2"
+              src="./images/icon-arrow-down.svg"
+              alt="arrowdown"
+            />
+            <ul class="submenu2">
+              <li>History</li>
+              <li>Out Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+        <div class="buttonwraper">
+          <button id="login">Login</button>
+          <button id="register">Register</button>
+        </div>
+      </div>
+    </nav>
+    <main class="main">
+      <div class="mainwraper">
+        <div class="Heroimgcontainer">
+          <img
+            class="Heroimgmobile"
+            src="./images/image-hero-mobile.png"
+            alt="Heroimg"
+          />
+          <img
+            class="Heroimgdesktop"
+            src="./images/image-hero-desktop.png"
+            alt="Heroimgde"
+          />
+        </div>
+        <div class="wapper">
+          <div class="wraper">
+            <h1>Make </br> remote work</h1>
+            <p>
+              Get your team in sync, no matter your location. Streamline processes,
+              create team rituals, and watch productivity soar.
+            </p>
+            <button class="Herobtn">Learn more</button>
+          </div>
+          <div class="Logos">
+            <img class="herologo" src="./images/client-databiz.svg" alt="Logo" />
+            <img class="herologo" src="./images/client-audiophile.svg" alt="Logo" />
+            <img class="herologo" src="./images/client-meet.svg" alt="Logo" />
+            <img class="herologo" src="./images/client-maker.svg" alt="Logo" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="script.js"></script>
+  </body>
+</html>
