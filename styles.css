@@ -42,6 +42,7 @@ body {
 .nav-list {
   list-style: none;
   display: flex;
+  position: relative;
 }
 .Menuburger {
   object-fit: contain;
@@ -304,5 +305,59 @@ br {
     display: flex;
     gap: 2rem;
     margin-right: 5rem;
+  }
+  .Features {
+    position: relative;
+  }
+  .Company {
+    position: relative;
+  }
+  .hovermenu {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 3rem;
+    right: 0;
+    background-color: var(--AlmostWhite);
+    width: 11rem;
+    border-radius: 15px;
+    box-shadow: -42px 38px 21px -30px rgba(0, 0, 0, 0.1);
+  }
+  .hovermenu.open {
+    display: flex;
+  }
+  .hovermenu2.open {
+    display: flex;
+  }
+  .hovermenu p {
+    font-size: 18px;
+    color: var(--MediumGray);
+    font-weight: 500;
+    padding-inline: 1.5rem;
+    line-height: 0;
+    font-family: Epilogue;
+    width: fit-content;
+  }
+  .hovermenu2 {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 3rem;
+    right: 0;
+    background-color: var(--AlmostWhite);
+    width: 9rem;
+    height: 8rem;
+    box-shadow: -42px 38px 21px -30px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    border-radius: 15px;
+  }
+  .hovermenu2 p {
+    font-size: 18px;
+    color: var(--MediumGray);
+    font-weight: 500;
+    padding-inline: 1.5rem;
+    line-height: 0;
+    font-family: Epilogue;
+    width: fit-content;
   }
 }
